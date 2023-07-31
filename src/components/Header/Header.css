@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background: white;
+  width: 100%;
+  padding: 16px 24px;
+}
+
+.logo {
+  background: #81E3F8;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+}
+
+.header-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  width: 20px;
+  height: auto;
+  margin: 0 0 0 auto;
+}

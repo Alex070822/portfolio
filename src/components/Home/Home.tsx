@@ -1,8 +1,10 @@
+import "./Home.css";
+
 function Home() {
   return (
     <div className="home">
-      <p className="greeting">Hi, my name is</p>
-      <p className="section-title">Alexis González.</p>
+      <h1 className="greeting">Hi, my name is</h1>
+      <p className="home-title">Alexis González.</p>
       <p className="quote">
         I thrive on the challenges that come with turning concepts into tangible
         solutions.
@@ -14,7 +16,7 @@ function Home() {
         channel that passion into building innovative and user-friendly software
         applications.
       </p>
-      <button className="content-button">ABOUT ME</button>
+      <button className="content-button">About me</button>
     </div>
   );
 }
