@@ -4,17 +4,21 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-title">Social</div>
-      <div className="social-icons">
-        <img
-          src={"./src/assets/linkedin-logo.png"}
-          alt="linkedin logo"
-          className="footer-social-icon"
-        />
-        <img
-          src={"./src/assets/github-logo.png"}
-          alt="github logo"
-          className="footer-social-icon"
-        />
+      <div className="social-icons-container">
+        <a href="https://www.linkedin.com/in/alexis-glez-h/" target="_blank">
+          <img
+            src={"./src/assets/linkedin-logo.png"}
+            alt="linkedin logo"
+            className="footer-social-icon"
+          />
+        </a>
+        <a href="https://github.com/Alex070822" target="_blank">
+          <img
+            src={"./src/assets/github-logo.png"}
+            alt="github logo"
+            className="footer-social-icon"
+          />
+        </a>
       </div>
       <div className="footer-name">Alexis González</div>
       <div className="footer-description">

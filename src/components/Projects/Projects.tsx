@@ -18,7 +18,15 @@ function Projects() {
         A responsive launch countdown timer that i made using React, Vite and
         Emotion.
       </p>
-      <button className="content-button">Github</button>
+      <button
+        type="button"
+        className="content-button"
+        onClick={() =>
+          window.open("https://taupe-bonbon-fc5739.netlify.app/", "_blank")
+        }
+      >
+        Github
+      </button>
       <img
         src={"./src/assets/ip-tracker.png"}
         alt="ip address tracker website"
@@ -29,7 +37,15 @@ function Projects() {
         A responsive IP address tracker made with React, Vite, Emotion and two
         different APIs.
       </p>
-      <button className="content-button">Github</button>
+      <button
+        type="button"
+        className="content-button"
+        onClick={() =>
+          window.open("https://steady-panda-cd2ef5.netlify.app/", "_blank")
+        }
+      >
+        Github
+      </button>
       <img
         src={"./src/assets/planets.png"}
         alt="planets fact website"
@@ -40,7 +56,15 @@ function Projects() {
         A responsive 8-page fact site for all planets in our solar system using
         React. Vite and Emotion.
       </p>
-      <button className="content-button">Github</button>
+      <button
+        type="button"
+        className="content-button"
+        onClick={() =>
+          window.open("https://warm-licorice-4a2442.netlify.app/", "_blank")
+        }
+      >
+        Github
+      </button>
       <img
         src={"./src/assets/time-tracking-dashboard.png"}
         alt="time tracking dashboard website"
@@ -51,7 +75,15 @@ function Projects() {
         A responsive time tracking dashboard using React and a JSON file to
         manage data.
       </p>
-      <button className="content-button">Github</button>
+      <button
+        type="button"
+        className="content-button"
+        onClick={() =>
+          window.open("https://remarkable-crepe-2bd39c.netlify.app/", "_blank")
+        }
+      >
+        Github
+      </button>
     </div>
   );
 }
