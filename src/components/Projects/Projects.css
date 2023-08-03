@@ -1,6 +1,8 @@
 .projects {
   background-color: #F9F9F9;
   padding: 72px 24px 25px 24px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .section-title {

@@ -1,8 +1,9 @@
 import "./About.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h2 className="section-title ">About me</h2>
       <div className="divider"></div>
       <p className="section-description">
@@ -27,7 +28,9 @@ function About() {
         Let's connect and discuss how we can bring your ideas to life through
         functional and elegant code.
       </p>
-      <button className="content-button">Contact</button>
+      <Link to="#contact" smooth>
+        <button className="content-button">Contact</button>
+      </Link>
       <h3 className="about-header">Skills</h3>
       <div className="skill-container">
         <div className="skill">React</div>

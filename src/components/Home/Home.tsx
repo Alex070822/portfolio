@@ -1,4 +1,5 @@
 import "./Home.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Home() {
   return (
@@ -16,7 +17,9 @@ function Home() {
         channel that passion into building innovative and user-friendly software
         applications.
       </p>
-      <button className="content-button">About me</button>
+      <Link to="#about" smooth>
+        <button className="content-button">About me</button>
+      </Link>
     </div>
   );
 }
