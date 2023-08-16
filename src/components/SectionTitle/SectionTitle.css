@@ -1,0 +1,26 @@
+.section-title {
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  margin-top: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.divider {
+  width: 24px;
+  margin: 20px auto;
+  border: 2px #F8F301 solid;
+}
+
+.section-description {
+  color: #68647D;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.64px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  text-align: center;
+}
