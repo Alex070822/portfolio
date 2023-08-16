@@ -1,13 +1,14 @@
 import "./Projects.css";
+import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function Projects() {
   return (
     <div className="projects" id="projects">
-      <h2 className="section-title ">Projects</h2>
-      <div className="divider"></div>
-      <p className="section-description">
-        Here, you will find some of the projects that i have created.
-      </p>
+      <SectionTitle
+        title="Projects"
+        description="Here, you will find some of the projects that i have created."
+      />
       <a
         href="https://taupe-bonbon-fc5739.netlify.app/"
         target="_blank"
@@ -24,18 +25,15 @@ function Projects() {
         A responsive launch countdown timer that i made using React, Vite and
         Emotion.
       </p>
-      <button
-        type="button"
-        className="content-button"
+      <PrimaryButton
+        buttonText="Github"
         onClick={() =>
           window.open(
             "https://github.com/Alex070822/frontend-mentor/tree/main/launch-countdown-timer",
             "_blank"
           )
         }
-      >
-        Github
-      </button>
+      />
       <a
         href="https://steady-panda-cd2ef5.netlify.app/"
         target="_blank"
@@ -52,18 +50,15 @@ function Projects() {
         A responsive IP address tracker made with React, Vite, Emotion and two
         different APIs.
       </p>
-      <button
-        type="button"
-        className="content-button"
+      <PrimaryButton
+        buttonText="Github"
         onClick={() =>
           window.open(
             "https://github.com/Alex070822/frontend-mentor/tree/main/ip-address-tracker",
             "_blank"
           )
         }
-      >
-        Github
-      </button>
+      />
       <a
         href="https://warm-licorice-4a2442.netlify.app/"
         target="_blank"
@@ -80,18 +75,15 @@ function Projects() {
         A responsive 8-page fact site for all planets in our solar system using
         React. Vite and Emotion.
       </p>
-      <button
-        type="button"
-        className="content-button"
+      <PrimaryButton
+        buttonText="Github"
         onClick={() =>
           window.open(
             "https://github.com/Alex070822/frontend-mentor/tree/main/planets-fact-site",
             "_blank"
           )
         }
-      >
-        Github
-      </button>
+      />
       <a
         href="https://remarkable-crepe-2bd39c.netlify.app/"
         target="_blank"
@@ -108,18 +100,15 @@ function Projects() {
         A responsive time tracking dashboard using React and a JSON file to
         manage data.
       </p>
-      <button
-        type="button"
-        className="content-button"
+      <PrimaryButton
+        buttonText="Github"
         onClick={() =>
           window.open(
             "https://github.com/Alex070822/frontend-mentor/tree/main/time-tracking-dashboard",
             "_blank"
           )
         }
-      >
-        Github
-      </button>
+      />
     </div>
   );
 }

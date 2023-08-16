@@ -1,5 +1,6 @@
 import "./Home.css";
 import { HashLink as Link } from "react-router-hash-link";
+import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 function Home() {
   return (
@@ -18,7 +19,7 @@ function Home() {
         applications.
       </p>
       <Link to="#about" smooth>
-        <button className="content-button">About me</button>
+        <PrimaryButton buttonText="About me" />
       </Link>
     </div>
   );

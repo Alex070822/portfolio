@@ -1,15 +1,16 @@
 import "./About.css";
 import { HashLink as Link } from "react-router-hash-link";
+import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function About() {
   return (
     <div className="about" id="about">
-      <h2 className="section-title ">About me</h2>
-      <div className="divider"></div>
-      <p className="section-description">
-        Here, you can find more information about me, my knowledge, and
-        technical skills in terms of programming and technology.
-      </p>
+      <SectionTitle
+        title="About me"
+        description="Here, you can find more information about me, my knowledge, and
+        technical skills in terms of programming and technology."
+      />
       <h3 className="about-header">Get to know me!</h3>
       <p className="section-paragraph">
         With a solid foundation in <strong>Full-stack development</strong>, i'm
@@ -29,7 +30,7 @@ function About() {
         functional and elegant code.
       </p>
       <Link to="#contact" smooth>
-        <button className="content-button">Contact</button>
+        <PrimaryButton buttonText="Contact" />
       </Link>
       <h3 className="about-header">Skills</h3>
       <div className="skill-container">

@@ -39,17 +39,3 @@
   width: 59.327217%;
   margin-bottom: 32px;
 }
-
-.content-button {
-  background-color: #F8F301;
-  border-radius: 2px;
-  border: none;
-  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.10);
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1.20px;
-  padding: 1rem;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-}

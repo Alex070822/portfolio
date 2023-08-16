@@ -26,6 +26,10 @@
   width: 24px;
 }
 
+.footer-social-icon:hover {
+  opacity: 0.75;
+}
+
 .footer-name {
   font-size: 10px;
   font-family: 'Oswald', sans-serif;

@@ -1,14 +1,14 @@
 import "./Contact.css";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 function Contact() {
   return (
     <div className="contact" id="contact">
-      <h2 className="section-title ">Contact</h2>
-      <div className="divider"></div>
-      <p className="section-description">
-        Please don't hesitate to reach out to me by using the form below. I will
-        get back to you as soon as possible.
-      </p>
+      <SectionTitle
+        title="Contact"
+        description="Please don't hesitate to reach out to me by using the form below. I will
+        get back to you as soon as possible."
+      />
       <form className="contact-form" action="mailto:agonzalez.dev1@gmail.com">
         <label htmlFor="name" className="form-label">
           Name
