@@ -34,16 +34,22 @@ function About() {
       </Link>
       <h3 className="about-header">Skills</h3>
       <div className="skill-container">
-        <div className="skill">React</div>
-        <div className="skill">Node.js</div>
-        <div className="skill">MongoDB</div>
-        <div className="skill">JavaScript</div>
-        <div className="skill">HTML</div>
-        <div className="skill">CSS</div>
-        <div className="skill">RESTful APIs</div>
-        <div className="skill">Git</div>
-        <div className="skill">Docker</div>
-        <div className="skill">Kubernetes</div>
+        {[
+          "React",
+          "Node.js",
+          "MongoDB",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "RESTful APIs",
+          "Git",
+          "Docker",
+          "Kubernetes",
+        ].map((skill, index) => (
+          <div key={index} className="skill">
+            {skill}
+          </div>
+        ))}
       </div>
     </div>
   );
