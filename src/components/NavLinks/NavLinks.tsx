@@ -37,7 +37,7 @@ const navLinkCss = css`
     font-size: 12px;
     font-family: "Oswald", sans-serif;
     font-weight: 500;
-    letter-spacing: 1.68px;
+    letter-spacing: 1.44px;
     text-decoration: none;
     text-transform: uppercase;
 
@@ -49,11 +49,23 @@ const navLinkCss = css`
   @media (min-width: ${widthBreakpoint.md}px) {
     border-top: none;
     padding: 0;
+
+    a {
+      font-size: 14px;
+      letter-spacing: 1.68px;
+    }
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    a {
+      font-size: 20px;
+      letter-spacing: 2.4px;
+    }
   }
 `;
 
 const hiddenCss = css`
-  @media (max-width: ${widthBreakpoint.md}px) {
+  @media (max-width: ${widthBreakpoint.md - 1}px) {
     display: none;
   }
 `;

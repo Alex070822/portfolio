@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { widthBreakpoint } from "../shared";
 
 const sectionTitleCss = css`
   font-size: 24px;
@@ -7,12 +8,34 @@ const sectionTitleCss = css`
   margin-top: 48px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 36px;
+    letter-spacing: 1.44px;
+    margin-top: 96px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 42px;
+    letter-spacing: 1.68px;
+  }
 `;
 
 const dividerCss = css`
   width: 24px;
   margin: 20px auto;
   border: 2px #f8f301 solid;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    width: 36px;
+    margin: 28px auto;
+    border: 4px #f8f301 solid;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    width: 42px;
+    margin: 32px auto;
+  }
 `;
 
 const sectionDescriptionCss = css`
@@ -21,9 +44,19 @@ const sectionDescriptionCss = css`
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: -0.64px;
-  margin-top: 16px;
   margin-bottom: 40px;
   text-align: center;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 34px;
+    letter-spacing: -1.36px;
+  }
 `;
 
 function SectionTitle({ title, description }) {

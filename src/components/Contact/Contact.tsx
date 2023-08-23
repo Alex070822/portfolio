@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { widthBreakpoint } from "../shared";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 const contactCss = css`
@@ -6,6 +7,14 @@ const contactCss = css`
   background-image: url("./src/assets/background-pattern.svg");
   scroll-snap-align: start;
   scroll-snap-stop: always;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    padding: 72px 48px 96px 48px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    padding: 88px 200px 96px 200px;
+  }
 `;
 
 const contactFormCss = css`
@@ -13,6 +22,14 @@ const contactFormCss = css`
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   padding: 24px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    padding: 32px 48px 52px 48px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    padding: 32px 48px 52px 48px;
+  }
 `;
 
 const formLabelCss = css`
@@ -21,6 +38,11 @@ const formLabelCss = css`
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 12px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
 `;
 
 const formInputCss = css`
@@ -34,6 +56,12 @@ const formInputCss = css`
   padding: 20px 16px;
   margin-bottom: 36px;
   border-radius: 2px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 26px;
+    padding: 28px 24px;
+    margin-bottom: 44px;
+  }
 `;
 
 const formMessageCss = css`
@@ -58,6 +86,11 @@ const formSubmitBtnCss = css`
 
   &:hover {
     transform: translateY(-2px);
+  }
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 28px;
+    letter-spacing: 2.1px;
   }
 `;
 

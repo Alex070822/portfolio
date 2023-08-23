@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { widthBreakpoint } from "../shared";
 
 const primaryButtonCss = css`
   background-color: #f8f301;
@@ -17,6 +18,11 @@ const primaryButtonCss = css`
 
   &:hover {
     transform: translateY(-2px);
+  }
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 28px;
+    letter-spacing: 2.1px;
   }
 `;
 

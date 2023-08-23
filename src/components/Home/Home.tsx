@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { widthBreakpoint } from "../shared";
 import { HashLink as Link } from "react-router-hash-link";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
@@ -7,12 +8,30 @@ const homeCss = css`
   background-image: url("./src/assets/background-pattern.svg");
   scroll-snap-align: start;
   scroll-snap-stop: always;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    padding: 72px 48px 223px 48px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    padding: 88px 200px 213px 200px;
+  }
 `;
 
 const greetingCss = css`
   font-size: 14px;
   font-weight: 400;
   padding-top: 62px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 26px;
+    padding-top: 191px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 32px;
+    padding-top: 158px;
+  }
 `;
 
 const homeTitleCss = css`
@@ -20,6 +39,18 @@ const homeTitleCss = css`
   font-weight: 700;
   letter-spacing: 0.96px;
   margin-top: 16px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 36px;
+    letter-spacing: 1.44px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 42px;
+    letter-spacing: 1.68px;
+    margin-top: 25px;
+  }
 `;
 
 const quoteCss = css`
@@ -28,6 +59,18 @@ const quoteCss = css`
   font-weight: 700;
   letter-spacing: -0.48px;
   margin-top: 16px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 36px;
+    letter-spacing: -0.72px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 42px;
+    letter-spacing: -0.84px;
+    margin-top: 25px;
+  }
 `;
 
 const homeParagraphCss = css`
@@ -38,6 +81,20 @@ const homeParagraphCss = css`
   margin-top: 16px;
   width: 59.327217%;
   margin-bottom: 32px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+    margin-top: 24px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 34px;
+    letter-spacing: -1.36px;
+    margin-top: 25px;
+  }
 `;
 
 function Home() {

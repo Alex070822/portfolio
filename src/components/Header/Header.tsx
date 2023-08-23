@@ -12,6 +12,10 @@ const navbarCss = css`
   padding: 16px 24px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 1;
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    padding: 19px 48px;
+  }
 `;
 
 const logoContainerCss = css`
@@ -19,6 +23,14 @@ const logoContainerCss = css`
   justify-content: center;
   align-items: center;
   margin-right: 16px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    margin-right: 18px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    margin-right: 24px;
+  }
 `;
 
 const rotate = keyframes`
@@ -49,10 +61,20 @@ const logoBorderCss = css`
     background: linear-gradient(45deg, transparent, transparent 40%, #81e3f8);
     filter: blur(4px);
   }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    border-radius: 26px;
+    height: 52px;
+    width: 52px;
+  }
 `;
 
 const logoCss = css`
   height: 39px;
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    height: 49px;
+  }
 `;
 
 const navbarTitleCss = css`
@@ -61,6 +83,16 @@ const navbarTitleCss = css`
   font-weight: 700;
   letter-spacing: 2.88px;
   text-transform: uppercase;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 14px;
+    letter-spacing: 3.36px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 20px;
+    letter-spacing: 24%;
+  }
 `;
 
 const navbarButtonCss = css`

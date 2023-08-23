@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { widthBreakpoint } from "../shared";
 import { HashLink as Link } from "react-router-hash-link";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import SectionTitle from "../SectionTitle/SectionTitle";
@@ -8,6 +9,14 @@ const aboutCss = css`
   padding: 72px 24px 65px 24px;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    padding: 72px 48px 96px 48px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    padding: 88px 200px 96px 200px;
+  }
 `;
 
 const aboutHeaderCss = css`
@@ -16,6 +25,18 @@ const aboutHeaderCss = css`
   font-weight: 500;
   letter-spacing: -0.32px;
   margin-bottom: 20px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 36px;
+    letter-spacing: -0.72px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 42px;
+    letter-spacing: -0.84px;
+    margin-bottom: 32px;
+  }
 `;
 
 const aboutParagraphCss = css`
@@ -30,12 +51,36 @@ const aboutParagraphCss = css`
     content: "";
     margin-top: 12px;
   }
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+    margin-bottom: 36px;
+
+    br {
+      margin-top: 24px;
+    }
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 34px;
+    letter-spacing: -1.36px;
+    margin-bottom: 42px;
+  }
 `;
 
 const skillContainerCss = css`
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    gap: 24px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    gap: 36px;
+  }
 `;
 
 const skillCss = css`
@@ -46,6 +91,17 @@ const skillCss = css`
   border-radius: 4px;
   letter-spacing: -0.64px;
   padding: 12px 16px;
+
+  @media (min-width: ${widthBreakpoint.md}px) {
+    font-size: 28px;
+    letter-spacing: -1.12px;
+    padding: 20px 24px;
+  }
+
+  @media (min-width: ${widthBreakpoint.lg}px) {
+    font-size: 34px;
+    letter-spacing: -1.36px;
+  }
 `;
 
 function About() {
