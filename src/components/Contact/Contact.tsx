@@ -203,7 +203,7 @@ const Contact = () => {
           <>
             <div className={`${submitMessageCss} ${submitErrorCss}`}>
               Message sending failed. Please try again later.
-            </div>{" "}
+            </div>
             <br />
           </>
         ) : null}
