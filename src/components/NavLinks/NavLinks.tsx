@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 import { widthBreakpoint } from "../shared";
 import { HashLink as Link } from "react-router-hash-link";
+import { FC } from "react";
 
 const navLinksContainerCss = css`
   position: absolute;
@@ -70,7 +71,12 @@ const hiddenCss = css`
   }
 `;
 
-function NavLinks({ showLinks, setShowLinks }) {
+interface NavLinksProps {
+  showLinks: boolean;
+  setShowLinks: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const NavLinks: FC<NavLinksProps> = ({ showLinks, setShowLinks }) => {
   const closeNavLinks = () => {
     setShowLinks(false);
   };
@@ -95,6 +101,6 @@ function NavLinks({ showLinks, setShowLinks }) {
       </ul>
     </nav>
   );
-}
+};
 
 export default NavLinks;

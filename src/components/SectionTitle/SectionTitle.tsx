@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import { widthBreakpoint } from "../shared";
+import { FC } from "react";
 
 const sectionTitleCss = css`
   font-size: 24px;
@@ -59,7 +60,12 @@ const sectionDescriptionCss = css`
   }
 `;
 
-function SectionTitle({ title, description }) {
+interface SectionTitleProps {
+  title: string;
+  description: string;
+}
+
+const SectionTitle: FC<SectionTitleProps> = ({ title, description }) => {
   return (
     <>
       <h2 className={sectionTitleCss}>{title}</h2>
@@ -67,6 +73,6 @@ function SectionTitle({ title, description }) {
       <p className={sectionDescriptionCss}>{description}</p>
     </>
   );
-}
+};
 
 export default SectionTitle;

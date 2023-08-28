@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import { widthBreakpoint } from "../shared";
+import { FC, MouseEventHandler } from "react";
 
 const primaryButtonCss = css`
   background-color: #f8f301;
@@ -26,12 +27,17 @@ const primaryButtonCss = css`
   }
 `;
 
-function PrimaryButton({ buttonText, onClick }) {
+interface PrimaryButtonProps {
+  buttonText: string;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+}
+
+const PrimaryButton: FC<PrimaryButtonProps> = ({ buttonText, onClick }) => {
   return (
     <button className={primaryButtonCss} onClick={onClick}>
       {buttonText}
     </button>
   );
-}
+};
 
 export default PrimaryButton;
