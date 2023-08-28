@@ -118,29 +118,29 @@ const formSubmitBtnCss = css`
 `;
 
 const Contact = () => {
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement | null>(null);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormSubmitError, setIsFormSubmitError] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_7349cnp",
-        "template_an1g99s",
-        form.current,
-        "KibCTVkzJpW_dUgAW"
-      )
-      .then(
-        () => {
-          e.target.reset();
-          setIsFormSubmitted(true);
-        },
-        () => {
-          setIsFormSubmitError(true);
-        }
-      );
+    const currentForm = form.current;
+    if (currentForm) {
+      try {
+        await emailjs.sendForm(
+          "service_7349cnp",
+          "template_an1g99s",
+          currentForm,
+          "KibCTVkzJpW_dUgAW"
+        );
+
+        currentForm.reset();
+        setIsFormSubmitted(true);
+      } catch (error) {
+        setIsFormSubmitError(true);
+      }
+    }
   };
 
   return (
