@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 
 const contactCss = css`
   padding: 72px 24px 65px 24px;
-  background-image: url("./src/assets/background-pattern.svg");
+  background-image: url("/assets/background-pattern.svg");
   scroll-snap-align: start;
   scroll-snap-stop: always;
 

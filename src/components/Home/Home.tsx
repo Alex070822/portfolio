@@ -5,7 +5,7 @@ import PrimaryButton from "../PrimaryButton/PrimaryButton";
 
 const homeCss = css`
   padding: 72px 24px 25px 24px;
-  background-image: url("./src/assets/background-pattern.svg");
+  background-image: url("/assets/background-pattern.svg");
   scroll-snap-align: start;
   scroll-snap-stop: always;
 

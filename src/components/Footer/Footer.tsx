@@ -139,14 +139,14 @@ function Footer() {
         <div className={socialIconsContainerCss}>
           <a href="https://www.linkedin.com/in/alexis-glez-h/" target="_blank">
             <img
-              src={"./src/assets/linkedin-logo.png"}
+              src={"/assets/linkedin-logo.png"}
               alt="linkedin logo"
               className={footerSocialIconCss}
             />
           </a>
           <a href="https://github.com/Alex070822" target="_blank">
             <img
-              src={"./src/assets/github-logo.png"}
+              src={"/assets/github-logo.png"}
               alt="github logo"
               className={footerSocialIconCss}
             />

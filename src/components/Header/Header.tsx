@@ -127,17 +127,17 @@ function Header() {
     <header className={navbarCss}>
       <div className={logoContainerCss}>
         <div className={logoBorderCss}></div>
-        <img src={"./src/assets/logo.png"} alt="logo" className={logoCss} />
+        <img src={"/assets/logo.png"} alt="logo" className={logoCss} />
       </div>
       <div className={navbarTitleCss}>Alexis González</div>
       <img
-        src={"./src/assets/hamburger-menu.png"}
+        src={"/assets/hamburger-menu.png"}
         alt="nav menu icon"
         className={`${navbarButtonCss} ${showLinks ? hiddenCss : ""}`}
         onClick={toggleShowLinks}
       />
       <img
-        src={"./src/assets/close-menu-icon.png"}
+        src={"/assets/close-menu-icon.png"}
         alt="close menu icon"
         className={`${navbarButtonCss} ${!showLinks ? hiddenCss : ""}`}
         onClick={toggleShowLinks}
